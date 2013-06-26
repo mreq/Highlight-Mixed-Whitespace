@@ -21,7 +21,7 @@ def is_find_results(view):
 
 # Return an array of regions matching mixed whitespace.
 def find_mixed_whitespace(view):
-    return view.find_all('(\t+ +)|( +\t+)')
+    return view.find_all('^(\t+ +)|^( +\t+)')
 
 
 # Highlight mixed whitspace.
